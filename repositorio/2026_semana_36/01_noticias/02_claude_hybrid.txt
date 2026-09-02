@@ -1,0 +1,6 @@
+TITULO: Anthropic lanza Claude 3.7 Sonnet con inferencia híbrida ultra-rápida
+URL: https://anthropic.com/news/claude-3-7
+CATEGORIA: Agentes & Código
+FECHA: 1 Septiembre 2026
+RESUMEN: El nuevo modelo introduce un selector dinámico de cómputo que modula el razonamiento según la dificultad del prompt, liderando los benchmarks de SWE-bench y ciberseguridad.
+TAG: TRENDING

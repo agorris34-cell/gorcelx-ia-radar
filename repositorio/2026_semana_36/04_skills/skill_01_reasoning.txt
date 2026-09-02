@@ -1,0 +1,9 @@
+TITULO: Arquitecto de Cadena de Pensamiento (CoT Protocol)
+CATEGORIA: Prompt Engineering
+DESCRIPCION: Fuerza al modelo a formular hipótesis contradictorias y evaluar fallos antes de emitir una decisión arquitectónica crítica.
+PROMPT: Actúa como Ingeniero de Sistemas Principal. Antes de proponer una solución al problema técnico planteado, sigue estrictamente este protocolo:
+1. Desglosa todas las restricciones implícitas y supuestos del sistema.
+2. Propón 3 enfoques divergentes (conservador, moderno, reactivo) con análisis de compensaciones (trade-offs).
+3. Identifica el modo de fallo catastrófico más probable para cada enfoque.
+4. Presenta la recomendación definitiva con código de verificación y pruebas unitarias.
+EJEMPLO_USO: Uso en refactorizaciones de microservicios, migraciones de base de datos y diseño de APIs concurrentes.

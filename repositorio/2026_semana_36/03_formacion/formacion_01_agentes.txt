@@ -1,0 +1,6 @@
+TITULO: Arquitectura de Agentes Autónomos con LangGraph y Memoria Vectorial
+PLATAFORMA: DeepLearning.AI
+NIVEL: Intermedio - Avanzado
+DURACION: 6 Horas
+URL: https://www.youtube.com/watch?v=kCc8FmEb1nY
+RESUMEN: Diseña flujos de trabajo multiagente con grafos de estado cíclicos, recuperación semántica avanzada y mecanismos de corrección en bucle cerrado.

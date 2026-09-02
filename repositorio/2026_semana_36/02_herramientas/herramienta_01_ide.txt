@@ -1,0 +1,7 @@
+CATEGORIA: Asistente IDE & Codificación
+LIDER_PREMIUM: Cursor Pro ($20/mes)
+URL_PREMIUM: https://cursor.com
+EQUIVALENTE_GRATIS: Continue.dev + Ollama / DeepSeek
+URL_GRATIS: https://continue.dev
+DESCRIPCION: Asistentes de codificación con análisis total del repositorio, generación de diffs inline y agentes autónomos para refactorización completa.
+VENTAJA_GRATIS: 100% de privacidad local en tu propia máquina sin telemetría ni suscripciones.

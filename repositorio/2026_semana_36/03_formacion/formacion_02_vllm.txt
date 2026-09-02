@@ -1,0 +1,6 @@
+TITULO: Inferencia y Optimización de LLMs en Producción con vLLM y Triton
+PLATAFORMA: Hugging Face Academy
+NIVEL: Avanzado
+DURACION: 8 Horas
+URL: https://huggingface.co
+RESUMEN: Aprende a maximizar el rendimiento mediante PagedAttention, continuous batching, cuantización FP8 y despliegue en clústeres Kubernetes.

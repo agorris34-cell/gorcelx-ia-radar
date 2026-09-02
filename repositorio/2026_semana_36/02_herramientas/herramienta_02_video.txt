@@ -1,0 +1,7 @@
+CATEGORIA: Generación de Video IA
+LIDER_PREMIUM: Runway Gen-3 Alpha ($35/mes)
+URL_PREMIUM: https://runwayml.com
+EQUIVALENTE_GRATIS: Wan2.1 + ComfyUI
+URL_GRATIS: https://github.com/Wan-Video/Wan2.1
+DESCRIPCION: Creación de secuencias cinematográficas hiperrealistas a partir de texto o imagen con control de cámara e iluminación de física simulada.
+VENTAJA_GRATIS: Renderizado ilimitado sin marcas de agua y control granular mediante grafos de nodos.

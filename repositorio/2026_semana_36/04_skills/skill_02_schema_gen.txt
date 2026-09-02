@@ -1,0 +1,8 @@
+TITULO: Generador de Esquemas Estrictos OpenAPI 3.1 & Pydantic V2
+CATEGORIA: Backend & Tipado
+DESCRIPCION: Convierte descripciones de producto en esquemas validados con serialización estricta, manejo de errores RFC 7807 y mocks.
+PROMPT: Transforma los siguientes requerimientos de endpoint en:
+1. Modelos Pydantic v2 con validadores de campo (@field_validator) y tipado estricto.
+2. Especificación OpenAPI 3.1 completa con respuestas 200, 400, 422 y 500.
+3. Fixture de prueba pytest con datos sintéticos realistas.
+EJEMPLO_USO: Acelerar el inicio de desarrollo backend asegurando contratos de API antes de codificar.

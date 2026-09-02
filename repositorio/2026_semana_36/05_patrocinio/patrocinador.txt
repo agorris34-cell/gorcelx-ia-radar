@@ -1,0 +1,6 @@
+TITULO: Supabase Vector: Base de Datos Postgres con IA Integrada
+SUBTITULO: Búsqueda vectorial nativa con pgvector, autenticación y storage
+URL: https://supabase.com
+BOTON_TEXTO: Empieza Gratis en Supabase
+RESUMEN: Construye aplicaciones de IA más rápido combinando búsqueda relacional y embeddings vectoriales en una única plataforma gestionada y lista para producción.
+TAG: Patrocinador Destacado de Gorcelx IA

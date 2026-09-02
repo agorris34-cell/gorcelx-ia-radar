@@ -1,0 +1,7 @@
+CATEGORIA: Clonación y Síntesis de Voz
+LIDER_PREMIUM: ElevenLabs Creator ($22/mes)
+URL_PREMIUM: https://elevenlabs.io
+EQUIVALENTE_GRATIS: Kokoro-82M / Chatterbox
+URL_GRATIS: https://huggingface.co/hexgrad/Kokoro-82M
+DESCRIPCION: Síntesis de voz ultra-expresiva con entonación emocional, control multilingüe y latencia ultra-baja ideal para agentes de voz en tiempo real.
+VENTAJA_GRATIS: Modelo ultra-ligero de 82M parámetros que corre a 10x tiempo real en CPU estándar.
