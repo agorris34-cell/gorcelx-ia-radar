@@ -1,0 +1,5 @@
+TÍTULO: Google contraataca con Gemini 3.8: más razonamiento y un modelo especializado en ciberataques
+ETIQUETA: LANZAMIENTO
+FECHA: 2 Septiembre 2026
+TEXTO: Google acelera la batalla por la IA con Gemini 3.8 Flash, su modelo Flash más potente para programación, razonamiento y agentes autónomos. La gran sorpresa es Gemini 3.8 Flash Cyber, diseñado para localizar vulnerabilidades y reforzar infraestructuras críticas antes de que lleguen los atacantes.
+URL: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
