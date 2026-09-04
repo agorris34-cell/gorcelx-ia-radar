@@ -1,0 +1,5 @@
+TÍTULO: ChatGPT, Claude y Grok caen al mismo tiempo: el apagón que paralizó a la IA
+ETIQUETA: ÚLTIMA HORA
+FECHA: 3 Septiembre 2026
+TEXTO: Tres de los asistentes más utilizados del planeta dejaron de funcionar prácticamente a la vez. Fallaron los accesos, las API, Claude Code, la generación de imágenes y otras funciones. Los servicios regresaron horas después, pero ninguna explicación ha aclarado por completo por qué coincidieron las tres caídas.
+URL: https://www.theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down

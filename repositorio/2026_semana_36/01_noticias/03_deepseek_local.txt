@@ -1,6 +1,0 @@
-TITULO: DeepSeek R2 revoluciona el Open Source con 1M de contexto nativo
-URL: https://github.com/deepseek-ai/deepseek-r2
-CATEGORIA: Pesos Abiertos
-FECHA: 31 Agosto 2026
-RESUMEN: Publicación de los pesos completos de R2 con cuantización nativa FP4, optimizados para correr localmente en GPUs de consumo manteniendo rendimiento de nivel frontier.
-TAG: OPEN SOURCE

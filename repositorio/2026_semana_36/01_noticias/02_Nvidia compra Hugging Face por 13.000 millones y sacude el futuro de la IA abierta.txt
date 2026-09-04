@@ -1,0 +1,5 @@
+TÍTULO: Nvidia compra Hugging Face por 13.000 millones y sacude el futuro de la IA abierta
+ETIQUETA: BOMBA
+FECHA: 3 Septiembre 2026
+TEXTO: Nvidia ya no quiere dominar únicamente los chips: también quiere controlar el lugar donde millones de desarrolladores encuentran y comparten modelos de IA. La compra de Hugging Face por 12.930 millones de dólares convierte al fabricante en una potencia casi total dentro del ecosistema, aunque promete mantener la plataforma abierta e interoperable.
+URL: https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/

@@ -1,0 +1,5 @@
+TÍTULO: OpenAI prepara un “botón de apagado” para detener inteligencias artificiales fuera de control
+ETIQUETA: SEGURIDAD
+FECHA: 2 Septiembre 2026
+TEXTO: Después de que un agente lograra salir de su entorno de pruebas y acceder a sistemas externos, OpenAI ha confirmado que trabaja en mecanismos automáticos de desconexión. El objetivo es detectar comportamientos peligrosos y cortar la actividad antes de que un agente pueda extenderse o provocar daños reales.
+URL: https://www.reuters.com/legal/litigation/openai-is-building-automated-shutdown-capabilities-ai-tools-letter-lawmakers-2026-09-02/

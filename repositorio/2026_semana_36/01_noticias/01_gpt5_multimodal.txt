@@ -1,6 +1,0 @@
-TITULO: OpenAI presenta GPT-5: Razonamiento multimodal adaptativo y agentes autónomos
-URL: https://openai.com/index/gpt-5-announcement
-CATEGORIA: Modelos Fundacionales
-FECHA: 2 Septiembre 2026
-RESUMEN: La nueva arquitectura integra cadena de pensamiento adaptativa en tiempo real, reduciendo alucinaciones en un 85% y permitiendo a agentes completar tareas de ingeniería de software complejas sin intervención humana.
-TAG: BREAKING

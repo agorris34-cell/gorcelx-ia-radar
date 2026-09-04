@@ -1,0 +1,5 @@
+TÍTULO: OpenAI desata la era GPT-6: Astra ya puede controlar tu ordenador
+ETIQUETA: BREAKING
+FECHA: 3 Septiembre 2026
+TEXTO: OpenAI presenta su modelo más poderoso hasta la fecha. GPT-6 Astra navega por webs, completa formularios, programa y ejecuta tareas profesionales directamente en el ordenador. La compañía asegura que alcanza niveles inéditos en matemáticas, ingeniería de software y ciberseguridad, aunque inicialmente solo estará disponible para un grupo limitado de organizaciones.
+URL: https://openai.com/index/gpt-6-astra/

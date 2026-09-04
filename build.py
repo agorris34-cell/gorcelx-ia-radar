@@ -52,18 +52,26 @@ def find_latest_week_dir(repo_dir: Path) -> Path:
 
 
 def parse_txt_file(filepath: Path) -> dict:
-    """Extrae las variables clave-valor de un archivo .txt con soporte multilínea."""
+    """Extrae las variables clave-valor de un archivo .txt con soporte multilínea y caracteres acentuados."""
     data = {"_filename": filepath.name, "_stem": filepath.stem}
     current_key = None
     current_val_lines = []
 
     with open(filepath, "r", encoding="utf-8", errors="replace") as f:
         for line in f:
-            match = re.match(r"^([A-Za-z0-9_]+)\s*:\s*(.*)$", line)
+            match = re.match(r"^([A-Za-z0-9_\u00C0-\u017F]+)\s*:\s*(.*)$", line)
             if match:
                 if current_key:
                     data[current_key] = "\n".join(current_val_lines).strip()
-                current_key = match.group(1).upper()
+                raw_key = match.group(1).upper()
+                if raw_key in ("TÍTULO", "TITULO"):
+                    current_key = "TITULO"
+                elif raw_key in ("ETIQUETA", "TAG", "CATEGORIA", "CATEGORÍA"):
+                    current_key = "TAG"
+                elif raw_key in ("TEXTO", "RESUMEN", "DESCRIPCION", "DESCRIPCIÓN"):
+                    current_key = "RESUMEN"
+                else:
+                    current_key = raw_key
                 current_val_lines = [match.group(2)]
             elif current_key:
                 current_val_lines.append(line.rstrip("\r\n"))
@@ -79,10 +87,10 @@ def parse_txt_file(filepath: Path) -> dict:
 
 
 def find_associated_image(txt_path: Path) -> Path | None:
-    """Busca una imagen .jpg/.jpeg/.png con el mismo nombre base que el archivo .txt"""
+    """Busca una imagen .jpg/.jpeg/.png/.jfif/.webp con el mismo nombre base que el archivo .txt"""
     parent = txt_path.parent
     stem = txt_path.stem
-    for ext in [".jpg", ".jpeg", ".png", ".webp"]:
+    for ext in [".jpg", ".jpeg", ".png", ".webp", ".jfif", ".avif"]:
         candidate = parent / f"{stem}{ext}"
         if candidate.exists():
             return candidate
@@ -546,6 +554,10 @@ def get_css() -> str:
 
         .bento-card.secondary {
             grid-column: span 5;
+        }
+
+        .bento-card.standard {
+            grid-column: span 4;
         }
 
         .bento-card.tertiary {
@@ -1257,6 +1269,7 @@ def get_css() -> str:
         @media (max-width: 900px) {
             .bento-card.featured,
             .bento-card.secondary,
+            .bento-card.standard,
             .bento-card.tertiary {
                 grid-column: span 12;
             }
@@ -1302,15 +1315,33 @@ def render_noticias(noticias: list[dict]) -> str:
         return "<p class='empty-msg'>No hay noticias en esta edición.</p>"
 
     html_parts = ['<div class="bento-grid">']
+    total = len(noticias)
     for idx, item in enumerate(noticias):
-        if idx == 0:
-            layout_cls = "bento-card featured"
-        elif idx == 1:
-            layout_cls = "bento-card secondary"
-        elif idx == 2:
-            layout_cls = "bento-card secondary"
+        if total == 6:
+            if idx == 0:
+                layout_cls = "bento-card featured"
+            elif idx == 1:
+                layout_cls = "bento-card secondary"
+            elif idx in (2, 3, 4):
+                layout_cls = "bento-card standard"
+            else:
+                layout_cls = "bento-card tertiary"
+        elif total <= 3:
+            if idx == 0:
+                layout_cls = "bento-card featured"
+            elif idx == 1:
+                layout_cls = "bento-card secondary"
+            else:
+                layout_cls = "bento-card tertiary"
         else:
-            layout_cls = "bento-card tertiary"
+            if idx == 0:
+                layout_cls = "bento-card featured"
+            elif idx == 1:
+                layout_cls = "bento-card secondary"
+            elif idx == total - 1 and (total % 3 == 1 or total % 2 != 0):
+                layout_cls = "bento-card tertiary"
+            else:
+                layout_cls = "bento-card standard"
 
         web_img = item.get("_web_image", "")
         img_markup = ""

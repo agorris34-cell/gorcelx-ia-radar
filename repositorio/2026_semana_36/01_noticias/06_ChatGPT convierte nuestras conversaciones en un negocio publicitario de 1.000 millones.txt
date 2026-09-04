@@ -1,0 +1,5 @@
+TÍTULO: ChatGPT convierte nuestras conversaciones en un negocio publicitario de 1.000 millones
+ETIQUETA: NEGOCIO
+FECHA: 31 Agosto 2026
+TEXTO: Los anuncios de ChatGPT ya generan un ritmo de ingresos anualizado de 1.000 millones de dólares, menos de 200 días después de su lanzamiento. OpenAI asegura que decenas de miles de anunciantes utilizan la plataforma y prepara su expansión por Europa, India, Oriente Medio y el norte de África.
+URL: https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/
