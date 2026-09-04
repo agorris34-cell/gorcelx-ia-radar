@@ -270,7 +270,7 @@
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            margin: 1.5rem auto 2.5rem auto;
+            margin: 1.15rem auto 1.65rem auto;
             max-width: 1000px;
             font-size: 0.9rem;
             transition: all 0.2s ease;
@@ -341,19 +341,19 @@
         }
 
         /* ==========================================================================
-           SECCIONES COMUNES
+           SECCIONES COMUNES - RITMO VERTICAL EQUILIBRADO
            ========================================================================== */
         section {
-            padding: 3.25rem 0;
+            padding: 2.25rem 0;
         }
 
         .section-header {
-            margin-bottom: 2rem;
+            margin-bottom: 1.6rem;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             border-bottom: 1px solid var(--border-glass-subtle);
-            padding-bottom: 0.85rem;
+            padding-bottom: 0.75rem;
         }
 
         .section-title {
@@ -391,6 +391,7 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 1.5rem;
+            grid-auto-flow: dense;
         }
 
         .bento-card {
@@ -424,6 +425,10 @@
 
         .bento-card.standard {
             grid-column: span 4;
+        }
+
+        .bento-card.half {
+            grid-column: span 6;
         }
 
         .bento-card.tertiary {
@@ -545,7 +550,7 @@
            Insertada entre Noticias y Herramientas. Máx. 300px de altura.
            ========================================================================== */
         .gorcelx-strip-section {
-            padding: 2.5rem 0;
+            padding: 1.5rem 0;
         }
 
         .gorcelx-strip-banner {
@@ -1142,6 +1147,7 @@
             .bento-card.featured,
             .bento-card.secondary,
             .bento-card.standard,
+            .bento-card.half,
             .bento-card.tertiary {
                 grid-column: span 12;
             }
@@ -1366,7 +1372,7 @@
             </article>
         
 
-            <article class="bento-card standard">
+            <article class="bento-card half">
                 
                 <div class="bento-img-frame">
                     <img src="assets/images/noticia_06_ChatGPT convierte nuestras conversaciones en un negocio publicitario de 1.000 millones.png" alt="ChatGPT convierte nuestras conversaciones en un negocio publicitario de 1.000 millones" class="bento-img" loading="lazy">
@@ -1390,8 +1396,12 @@
             </article>
         
 
-            <article class="bento-card tertiary">
+            <article class="bento-card half">
                 
+                <div class="bento-img-frame">
+                    <img src="assets/images/noticia_07_Google contraataca con Gemini 3.8 más razonamiento y un modelo especializado en ciberataques.png" alt="Google contraataca con Gemini 3.8: más razonamiento y un modelo especializado en ciberataques" class="bento-img" loading="lazy">
+                </div>
+            
                 <div class="bento-content">
                     <div class="bento-meta">
                         <span class="tag-pill">LANZAMIENTO</span>
@@ -1400,6 +1410,78 @@
                     <h3 class="bento-title">Google contraataca con Gemini 3.8: más razonamiento y un modelo especializado en ciberataques</h3>
                     <p class="bento-desc">Google acelera la batalla por la IA con Gemini 3.8 Flash, su modelo Flash más potente para programación, razonamiento y agentes autónomos. La gran sorpresa es Gemini 3.8 Flash Cyber, diseñado para localizar vulnerabilidades y reforzar infraestructuras críticas antes de que lleguen los atacantes.</p>
                     <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener noreferrer" class="bento-link">
+                        <span>Leer artículo completo</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        
+
+            <article class="bento-card standard">
+                
+                <div class="bento-img-frame">
+                    <img src="assets/images/noticia_08_Claude vuelve a la carga Anthropic lanza dos nuevos modelos para programación y ciencia.png" alt="Claude vuelve a la carga: Anthropic lanza dos nuevos modelos para programación y ciencia" class="bento-img" loading="lazy">
+                </div>
+            
+                <div class="bento-content">
+                    <div class="bento-meta">
+                        <span class="tag-pill">RIVALIDAD</span>
+                        <span class="card-date">1 Septiembre 2026</span>
+                    </div>
+                    <h3 class="bento-title">Claude vuelve a la carga: Anthropic lanza dos nuevos modelos para programación y ciencia</h3>
+                    <p class="bento-desc">Anthropic responde a sus rivales con Claude Fable 5.1 y Mythos 5.1. El primero promete reducir hasta un 45 % el coste de los trabajos complejos con agentes; el segundo eleva las capacidades en ciberseguridad y biología, pero permanece restringido a organizaciones verificadas por su potencial de uso peligroso.</p>
+                    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener noreferrer" class="bento-link">
+                        <span>Leer artículo completo</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        
+
+            <article class="bento-card standard">
+                
+                <div class="bento-img-frame">
+                    <img src="assets/images/noticia_09_Nueva York expulsa la IA generativa de sus colegios 600.000 alumnos afectados.png" alt="Nueva York expulsa la IA generativa de sus colegios: 600.000 alumnos afectados" class="bento-img" loading="lazy">
+                </div>
+            
+                <div class="bento-content">
+                    <div class="bento-meta">
+                        <span class="tag-pill">POLÉMICA</span>
+                        <span class="card-date">2 Septiembre 2026</span>
+                    </div>
+                    <h3 class="bento-title">Nueva York expulsa la IA generativa de sus colegios: 600.000 alumnos afectados</h3>
+                    <p class="bento-desc">La mayor red escolar pública de Estados Unidos impone una moratoria de un año a las herramientas de IA utilizadas directamente por alumnos hasta octavo grado. Los chatbots de compañía quedan prohibidos en todas las edades, mientras que los estudiantes mayores recibirán formación para aprender a detectar sesgos, riesgos y manipulaciones.</p>
+                    <a href="https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat" target="_blank" rel="noopener noreferrer" class="bento-link">
+                        <span>Leer artículo completo</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        
+
+            <article class="bento-card standard">
+                
+                <div class="bento-img-frame">
+                    <img src="assets/images/noticia_10_Abu Dabi libera una familia completa de IA hasta los datos de entrenamiento están abiertos.png" alt="Abu Dabi libera una familia completa de IA: hasta los datos de entrenamiento están abiertos" class="bento-img" loading="lazy">
+                </div>
+            
+                <div class="bento-content">
+                    <div class="bento-meta">
+                        <span class="tag-pill">OPEN SOURCE</span>
+                        <span class="card-date">3 Septiembre 2026</span>
+                    </div>
+                    <h3 class="bento-title">Abu Dabi libera una familia completa de IA: hasta los datos de entrenamiento están abiertos</h3>
+                    <p class="bento-desc">K2 Horizon llega con seis modelos que abarcan desde dispositivos diminutos hasta sistemas empresariales de 375.000 millones de parámetros. No solo publica los pesos: también abre el código, los datos de entrenamiento y la metodología. Una apuesta radical por la transparencia frente a los modelos cerrados de las grandes tecnológicas.</p>
+                    <a href="https://ifm.ai/k2/press-release/" target="_blank" rel="noopener noreferrer" class="bento-link">
                         <span>Leer artículo completo</span>
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>

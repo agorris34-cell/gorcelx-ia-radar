@@ -404,7 +404,7 @@ def get_css() -> str:
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            margin: 1.5rem auto 2.5rem auto;
+            margin: 1.15rem auto 1.65rem auto;
             max-width: 1000px;
             font-size: 0.9rem;
             transition: all 0.2s ease;
@@ -475,19 +475,19 @@ def get_css() -> str:
         }
 
         /* ==========================================================================
-           SECCIONES COMUNES
+           SECCIONES COMUNES - RITMO VERTICAL EQUILIBRADO
            ========================================================================== */
         section {
-            padding: 3.25rem 0;
+            padding: 2.25rem 0;
         }
 
         .section-header {
-            margin-bottom: 2rem;
+            margin-bottom: 1.6rem;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             border-bottom: 1px solid var(--border-glass-subtle);
-            padding-bottom: 0.85rem;
+            padding-bottom: 0.75rem;
         }
 
         .section-title {
@@ -525,6 +525,7 @@ def get_css() -> str:
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 1.5rem;
+            grid-auto-flow: dense;
         }
 
         .bento-card {
@@ -558,6 +559,10 @@ def get_css() -> str:
 
         .bento-card.standard {
             grid-column: span 4;
+        }
+
+        .bento-card.half {
+            grid-column: span 6;
         }
 
         .bento-card.tertiary {
@@ -679,7 +684,7 @@ def get_css() -> str:
            Insertada entre Noticias y Herramientas. Máx. 300px de altura.
            ========================================================================== */
         .gorcelx-strip-section {
-            padding: 2.5rem 0;
+            padding: 1.5rem 0;
         }
 
         .gorcelx-strip-banner {
@@ -1276,6 +1281,7 @@ def get_css() -> str:
             .bento-card.featured,
             .bento-card.secondary,
             .bento-card.standard,
+            .bento-card.half,
             .bento-card.tertiary {
                 grid-column: span 12;
             }
@@ -1329,7 +1335,18 @@ def render_noticias(noticias: list[dict]) -> str:
     html_parts = ['<div class="bento-grid">']
     total = len(noticias)
     for idx, item in enumerate(noticias):
-        if total == 6:
+        if total == 10:
+            if idx == 0:
+                layout_cls = "bento-card featured"      # span 7
+            elif idx == 1:
+                layout_cls = "bento-card secondary"     # span 5 (Fila 1 = 12)
+            elif idx in (2, 3, 4):
+                layout_cls = "bento-card standard"      # span 4 (Fila 2 = 12)
+            elif idx in (5, 6):
+                layout_cls = "bento-card half"          # span 6 (Fila 3 = 12)
+            else:
+                layout_cls = "bento-card standard"      # span 4 (Fila 4 = 12)
+        elif total == 6:
             if idx == 0:
                 layout_cls = "bento-card featured"
             elif idx == 1:
@@ -1350,8 +1367,8 @@ def render_noticias(noticias: list[dict]) -> str:
                 layout_cls = "bento-card featured"
             elif idx == 1:
                 layout_cls = "bento-card secondary"
-            elif idx == total - 1 and (total % 3 == 1 or total % 2 != 0):
-                layout_cls = "bento-card tertiary"
+            elif (total - idx) % 2 == 0:
+                layout_cls = "bento-card half"
             else:
                 layout_cls = "bento-card standard"
 

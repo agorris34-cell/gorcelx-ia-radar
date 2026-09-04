@@ -1,0 +1,5 @@
+TÍTULO: Abu Dabi libera una familia completa de IA: hasta los datos de entrenamiento están abiertos
+ETIQUETA: OPEN SOURCE
+FECHA: 3 Septiembre 2026
+TEXTO: K2 Horizon llega con seis modelos que abarcan desde dispositivos diminutos hasta sistemas empresariales de 375.000 millones de parámetros. No solo publica los pesos: también abre el código, los datos de entrenamiento y la metodología. Una apuesta radical por la transparencia frente a los modelos cerrados de las grandes tecnológicas.
+URL: https://ifm.ai/k2/press-release/

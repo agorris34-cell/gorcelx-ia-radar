@@ -1,0 +1,5 @@
+TÍTULO: Claude vuelve a la carga: Anthropic lanza dos nuevos modelos para programación y ciencia
+ETIQUETA: RIVALIDAD
+FECHA: 1 Septiembre 2026
+TEXTO: Anthropic responde a sus rivales con Claude Fable 5.1 y Mythos 5.1. El primero promete reducir hasta un 45 % el coste de los trabajos complejos con agentes; el segundo eleva las capacidades en ciberseguridad y biología, pero permanece restringido a organizaciones verificadas por su potencial de uso peligroso.
+URL: https://www.anthropic.com/news
