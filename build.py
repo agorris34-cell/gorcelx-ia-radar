@@ -583,9 +583,9 @@ def get_css() -> str:
             transform: scale(1.04);
         }
 
-        /* Padding reducido para optimizar protagonismo visual */
+        /* Respiración en Bento Grid: separación holgada respecto al borde inferior */
         .bento-content {
-            padding: 1.25rem 1.45rem 1.45rem 1.45rem;
+            padding: 1.25rem 1.45rem 2rem 1.45rem; /* 32px (2rem) de separación inferior */
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -643,7 +643,8 @@ def get_css() -> str:
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            margin-top: 0.4rem;
+            margin-top: auto;
+            padding-top: 0.65rem;
             width: fit-content;
         }
 
@@ -1542,7 +1543,7 @@ def render_patrocinio(patrocinio_item: dict | None) -> str:
     return f"""
         <div class="sponsor-box">
             <div class="sponsor-note-body">
-                <span class="sponsor-note-tag">Patrocinio // {escape(tag)}</span>
+                <span class="sponsor-note-tag">RECOMENDADO // SPONSOR SEMANAL</span>
                 <span class="sponsor-note-copy"><strong>{escape(title)}</strong> — {escape(desc)}</span>
             </div>
             <div class="sponsor-cta">
@@ -1777,9 +1778,8 @@ def build_site():
                 <img src="{escape(GORCELX_LOGO_URL)}" alt="Gorcelx Logo" class="footer-logo-img">
                 <span class="footer-brand-text">GORCELX IA</span>
             </div>
-            <p>Laboratorio y publicación periódica independiente de inteligencia artificial e ingeniería de sistemas.</p>
-            <p style="margin-top: 0.6rem; font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">
-                Generado por <code>build.py</code> • Estética Luminosa Editorial & Glassmorphism • {escape(edition_label)}
+            <p style="margin-top: 0.6rem; font-size: 0.88rem; color: var(--text-muted);">
+                &copy; 2026 Gorcelx. Todos los derechos reservados. | Laboratorio de Inteligencia Artificial.
             </p>
         </div>
     </footer>
